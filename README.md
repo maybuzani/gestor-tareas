@@ -13,8 +13,10 @@
 
 ## Estructura del proyecto
 
-## Flujo de colaboración
-
+## Flujo de colaboración 
+- Registrar tarea: Maydeline Silva
+- Listar tareas: Luis Lerma
+- Completar tarea: Luis Lerma
 ## Pruebas
 
 ## Preguntas de reflexión
