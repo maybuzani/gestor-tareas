@@ -1,17 +1,43 @@
 package org.example;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    static void main() {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        IO.println(String.format("Hello and welcome!"));
+import java.util.ArrayList;
+import java.util.Scanner;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            IO.println("i = " + i);
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        ArrayList<Task> misTareas = new ArrayList<>();
+
+        int opc = 0;
+
+        while (opc != 4) {
+            System.out.println("\n MENU DE TAREAS ");
+            System.out.println("1. Registrar tarea");
+            System.out.println("2. Listar tareas");
+            System.out.println("3. Completar tarea");
+            System.out.println("4. Salir");
+            System.out.print("Elige una opcion: ");
+
+            opc = sc.nextInt();
+            sc.nextLine();
+
+            if (opc == 1) {
+                System.out.print("Pon la descripcion: ");
+                String texto = sc.nextLine();
+
+                Task t = new Task(texto);
+                misTareas.add(t);
+                System.out.println("Guardada");
+
+            } else if (opc == 2) {
+                System.out.println("aqui va la lista");
+            } else if (opc == 3) {
+                System.out.println("aqui se completa");
+            } else if (opc == 4) {
+                System.out.println("Adios");
+            } else {
+                System.out.println("opcion mal");
+            }
         }
     }
 }
