@@ -4,7 +4,7 @@
 - Luis Ángel Lerma Coss 225203072
 - Maydelien Silva Buzani 225205380
 ## Descripción
-
+Aplicacion de consola en Java para gestionar tareas personales.
 ## Requisitos
 
 ## Instalación y ejecución
